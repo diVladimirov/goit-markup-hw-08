@@ -1,0 +1,94 @@
+.primary-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--seconadry-accent-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+  border-color: transparent;
+  transition: background-color var(--main-transition-duration)
+    var(--main-transition-timing-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.footer-subcribe__button {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 29px;
+  background-color: var(--accent-color);
+  color: var(--seconadry-accent-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: left;
+  border-radius: 4px;
+  border-width: 0px;
+  border-color: transparent;
+  transition: background-color var(--main-transition-duration)
+    var(--main-transition-timing-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    margin-left: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/footer-img/button-icon-send.svg");
+    color: var(--seconadry-accent-color);
+  }
+}
+
+.filter-button-style {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  background-color: #f5f4fa;
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  border-color: transparent;
+  transition: background-color var(--main-transition-duration)
+      var(--main-transition-timing-function),
+    color var(--main-transition-duration) var(--main-transition-timing-function),
+    box-shadow var(--main-transition-duration)
+      var(--main-transition-timing-function);
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--seconadry-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
