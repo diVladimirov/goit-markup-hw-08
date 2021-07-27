@@ -514,13 +514,13 @@ img {
   background-color: var(--accent-color);
 }
 
-.container.header__wraper--position {
+.container.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header__style--border {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
