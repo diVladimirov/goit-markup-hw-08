@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .section.solutions {
+    display: none;
+  }
+}
+
 .solutions__list {
   @extend %list;
   display: flex;
