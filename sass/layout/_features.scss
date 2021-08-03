@@ -1,6 +1,8 @@
-// .section.features {
-//   padding-bottom: 0px;
-// }
+@media screen and (min-width: 1200px) {
+  .section.features {
+    padding-bottom: 0px;
+  }
+}
 
 .features__list {
   @extend %list;
@@ -12,7 +14,7 @@
 }
 
 .features__item {
-  width: 450px;
+  max-width: 450px;
   outline: 1px solid red;
 
   @media screen and (max-width: 767px) {
