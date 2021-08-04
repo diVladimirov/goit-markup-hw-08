@@ -4,6 +4,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
   }
@@ -12,7 +16,15 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 449px) {
+    margin-right: 0px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     &:nth-child(even) {
       margin-right: 0px;
     }
