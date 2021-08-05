@@ -4,8 +4,28 @@
   background-color: var(--hero-and-footer-background-color);
 }
 .footer__position {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 61px;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-address {
@@ -17,7 +37,11 @@
 }
 
 .footer-address__location {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address__list {
@@ -25,12 +49,15 @@
 }
 
 .footer-address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address__link {
   @extend %link;
-  margin-top: 9px;
   color: var(--footer-secondary-color);
 
   &:hover,
@@ -39,9 +66,17 @@
   }
 }
 
-.footer-join {
-  margin-left: 70px;
-  width: 206px;
+@media screen and (max-width: 767px) {
+  .footer-join {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    margin-left: 70px;
+    width: 206px;
+  }
 }
 
 .footer-links__title,
@@ -55,15 +90,23 @@
   color: #ffffff;
 }
 
-.footer-subscribe {
-  margin-right: 0;
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe {
+    margin-left: 151px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 
 .footer-subscribe__input {
   padding: 14px 16px;
-  margin-right: 12px;
-  width: 383px;
+  margin-bottom: 20px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -73,6 +116,12 @@
   letter-spacing: 0.03em;
   transition: border-color var(--main-transition-duration)
     var(--main-transition-timing-function);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0px;
+    width: 383px;
+  }
 
   &:focus {
     outline: none;
