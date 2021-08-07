@@ -15,7 +15,6 @@
 
 .features__item {
   max-width: 450px;
-  outline: 1px solid red;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
