@@ -33,6 +33,9 @@
 
 .mobile-menu__container {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -46,7 +49,6 @@
 
 .mobile-nav-list {
   @extend %list;
-  margin-bottom: 306px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
