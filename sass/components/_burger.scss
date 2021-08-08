@@ -63,6 +63,10 @@
   @extend %link;
   color: var(--secondary-text-color);
 }
+.mobile-nav-list__links--colored {
+  color: var(--accent-color);
+}
+
 .mobile-contacts {
   @extend %list;
   margin-bottom: 64px;

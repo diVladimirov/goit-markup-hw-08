@@ -228,6 +228,10 @@ img {
   color: var(--secondary-text-color);
 }
 
+.mobile-nav-list__links--colored {
+  color: var(--accent-color);
+}
+
 .mobile-contacts {
   margin-bottom: 64px;
 }
