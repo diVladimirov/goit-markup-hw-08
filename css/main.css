@@ -214,6 +214,7 @@ img {
 }
 
 .mobile-nav-list {
+  margin-bottom: 306px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -635,7 +636,7 @@ img {
   border-color: var(--accent-color);
 }
 
-.form-field__input:focus + .modal-form-icon {
+.form-field__input:focus + .modal-form__icon {
   fill: var(--accent-color);
 }
 
